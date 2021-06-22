@@ -1,4 +1,4 @@
-const API = 'https://randomuser.me/api/';
+const API = process.env.API; //nos conectamos con la variable que definimos en .env
 
 const getData = async (id) => {
   const apiURl = id ? `${API}${id}` : API;
